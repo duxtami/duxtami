@@ -1,7 +1,7 @@
 {
   "version": 1,
   "login": "duxtami",
-  "seed": "#654CB7",
+  "seed": "#816ED1",
   "seedFromAvatar": true,
   "scheme": "tonalSpot",
   "motion": true,
@@ -21,7 +21,7 @@
   "hero": {
     "greeting": "Hi, I'm the maker of LastWave ",
     "name": "",
-    "subtitle": "I love Material You ",
+    "subtitle": "I love Material You apps",
     "typing": true,
     "avatarShape": "cookie12",
     "chips": [
@@ -73,11 +73,11 @@
   "projects": {
     "source": "manual",
     "repos": [
-      "LastWave-Native",
       "SleepTracker",
       "Sernheise",
       "LastTrack",
       "Zurutial",
+      "LastWave",
       "Gramly"
     ],
     "overrides": {
@@ -98,9 +98,6 @@
       },
       "Gramly": {
         "icon": "brand:kotlin"
-      },
-      "LastWave-Native": {
-        "icon": "music_note"
       }
     },
     "empty": "No description yet.",

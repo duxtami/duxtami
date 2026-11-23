@@ -1,7 +1,7 @@
 {
- "key": "65ada733",
+ "key": "be09463b",
  "stars": 33,
- "contributions": 336,
+ "contributions": 337,
  "repos": 8,
  "followers": 42,
  "languages": [
@@ -108,7 +108,7 @@
     "today": false
    },
    {
-    "c": 5,
+    "c": 6,
     "day": 23,
     "today": true
    },
@@ -262,6 +262,26 @@
    "stars": 0,
    "language": "TypeScript",
    "topics": []
+  },
+  {
+   "name": "LastWave-Native",
+   "url": "https://github.com/Clash-Projects/LastWave-Native",
+   "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
+   "fork": false,
+   "stars": 3219,
+   "language": "Kotlin",
+   "topics": [
+    "foss",
+    "kotlin",
+    "lastfm",
+    "lyrics",
+    "material3",
+    "ytmusic",
+    "innertube",
+    "scrobbler",
+    "autoeq",
+    "bit-perfect"
+   ]
   }
  ]
 }

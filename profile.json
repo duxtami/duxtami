@@ -73,11 +73,11 @@
   "projects": {
     "source": "manual",
     "repos": [
+      "LastWave-Native",
       "SleepTracker",
       "Sernheise",
       "LastTrack",
       "Zurutial",
-      "LastWave",
       "Gramly"
     ],
     "overrides": {
@@ -98,6 +98,9 @@
       },
       "Gramly": {
         "icon": "brand:kotlin"
+      },
+      "LastWave-Native": {
+        "icon": "music_note"
       }
     },
     "empty": "No description yet.",

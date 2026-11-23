@@ -1,7 +1,7 @@
 {
   "version": 1,
   "login": "duxtami",
-  "seed": "#816ED1",
+  "seed": "#654CB7",
   "seedFromAvatar": true,
   "scheme": "tonalSpot",
   "motion": true,
@@ -10,8 +10,8 @@
     "hero",
     "socials",
     "about",
-    "stack",
     "projects",
+    "stack",
     "stats",
     "streak",
     "wave",
@@ -21,7 +21,7 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "",
-    "subtitle": "I build interfaces and small useful tools.",
+    "subtitle": "I love Material You ",
     "typing": true,
     "avatarShape": "cookie12",
     "chips": [
@@ -30,8 +30,8 @@
         "label": "Earth"
       },
       {
-        "icon": "code",
-        "label": "TypeScript · Python"
+        "icon": "brand:kotlin",
+        "label": "Kotlin"
       }
     ]
   },
@@ -59,35 +59,14 @@
         "title": "Main",
         "items": [
           {
-            "icon": "brand:typescript",
-            "label": "TypeScript"
-          },
-          {
-            "icon": "brand:react",
-            "label": "React"
-          },
-          {
-            "icon": "brand:python",
-            "label": "Python"
+            "icon": "brand:kotlin",
+            "label": "Kotlin"
           }
         ]
       },
       {
         "title": "Tools",
-        "items": [
-          {
-            "icon": "brand:git",
-            "label": "Git"
-          },
-          {
-            "icon": "brand:figma",
-            "label": "Figma"
-          },
-          {
-            "icon": "brand:githubactions",
-            "label": "GitHub Actions"
-          }
-        ]
+        "items": []
       }
     ]
   },
@@ -98,9 +77,29 @@
       "Sernheise",
       "LastTrack",
       "Zurutial",
-      "LastWave"
+      "LastWave",
+      "Gramly"
     ],
-    "overrides": {},
+    "overrides": {
+      "LastWave": {
+        "icon": "music_note"
+      },
+      "SleepTracker": {
+        "icon": "moon_stars"
+      },
+      "Sernheise": {
+        "icon": "brand:vercel"
+      },
+      "LastTrack": {
+        "icon": "location_on"
+      },
+      "Zurutial": {
+        "icon": "movie"
+      },
+      "Gramly": {
+        "icon": "brand:kotlin"
+      }
+    },
     "empty": "No description yet.",
     "fork": "Fork"
   },
@@ -125,15 +124,7 @@
     "items": [
       {
         "icon": "brand:telegram",
-        "url": "https://t.me/"
-      },
-      {
-        "icon": "brand:discord",
-        "url": "https://discord.com/"
-      },
-      {
-        "icon": "brand:x",
-        "url": "https://x.com/"
+        "url": "https://t.me/duxtami"
       }
     ],
     "variant": "chip",

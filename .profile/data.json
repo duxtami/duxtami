@@ -1,9 +1,9 @@
 {
- "key": "9ff6f9a1",
- "stars": 3253,
+ "key": "6bf6667c",
+ "stars": 3257,
  "contributions": 1823,
  "repos": 9,
- "followers": 42,
+ "followers": 43,
  "languages": [
   [
    "Kotlin",
@@ -153,7 +153,7 @@
    "url": "https://github.com/Clash-Projects/LastWave-Native",
    "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
    "fork": false,
-   "stars": 3220,
+   "stars": 3221,
    "language": "Kotlin",
    "topics": [
     "foss",
@@ -173,7 +173,7 @@
    "url": "https://github.com/duxtami/SleepTracker",
    "text": "A beautiful, private and modern sleep tracker application build with material 3 expressive design",
    "fork": false,
-   "stars": 19,
+   "stars": 20,
    "language": "Kotlin",
    "topics": []
   },
@@ -220,7 +220,7 @@
    "url": "https://github.com/duxtami/SleepTracker",
    "text": "A beautiful, private and modern sleep tracker application build with material 3 expressive design",
    "fork": false,
-   "stars": 19,
+   "stars": 20,
    "language": "Kotlin",
    "topics": []
   },
@@ -261,6 +261,24 @@
    "topics": []
   },
   {
+   "name": "duxtami",
+   "url": "https://github.com/duxtami/duxtami",
+   "text": "My GitHub profile",
+   "fork": false,
+   "stars": 1,
+   "language": null,
+   "topics": []
+  },
+  {
+   "name": "Chakbishu-development-trust",
+   "url": "https://github.com/duxtami/Chakbishu-development-trust",
+   "text": "Chakbishu Development Trust - Complete Group, Customer, Savings, Loan, Collection & KYC Management System",
+   "fork": false,
+   "stars": 1,
+   "language": "TypeScript",
+   "topics": []
+  },
+  {
    "name": "Gramly",
    "url": "https://github.com/duxtami/Gramly",
    "text": "",
@@ -270,29 +288,11 @@
    "topics": []
   },
   {
-   "name": "duxtami",
-   "url": "https://github.com/duxtami/duxtami",
-   "text": "My GitHub profile",
-   "fork": false,
-   "stars": 0,
-   "language": null,
-   "topics": []
-  },
-  {
-   "name": "Chakbishu-development-trust",
-   "url": "https://github.com/duxtami/Chakbishu-development-trust",
-   "text": "Chakbishu Development Trust - Complete Group, Customer, Savings, Loan, Collection & KYC Management System",
-   "fork": false,
-   "stars": 0,
-   "language": "TypeScript",
-   "topics": []
-  },
-  {
    "name": "LastWave-Native",
    "url": "https://github.com/Clash-Projects/LastWave-Native",
    "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
    "fork": false,
-   "stars": 3220,
+   "stars": 3221,
    "language": "Kotlin",
    "topics": [
     "foss",

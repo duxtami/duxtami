@@ -49,9 +49,22 @@ try {
   console.warn("Could not fetch LWN languages:", err.message);
 }
 try {
-  let actRes = await (await fetch("https://api.github.com/repos/Clash-Projects/LastWave-Native/stats/commit_activity", {
-    headers: { Authorization: "bearer " + O2, "User-Agent": "expressive-profile" }
-  })).json();
+  let actRes = null;
+  for (let retry = 0; retry < 3; retry++) {
+    try {
+      let r = await fetch("https://api.github.com/repos/Clash-Projects/LastWave-Native/stats/commit_activity", {
+        headers: { Authorization: "bearer " + O2, "User-Agent": "expressive-profile" }
+      });
+      if (r.status === 200) {
+        let j = await r.json();
+        if (Array.isArray(j) && j.length > 0) {
+          actRes = j;
+          break;
+        }
+      }
+    } catch {}
+    await new Promise(res => setTimeout(res, 1200));
+  }
   if (Array.isArray(actRes)) {
     let lwnDays = {};
     for (let week of actRes) {
@@ -77,7 +90,14 @@ try {
     }
     let lwnTotal = Object.values(lwnDays).reduce((x, y) => x + y, 0);
     a.contributions += lwnTotal;
+  } else if (n) {
+    if (n.streak) a.streak = n.streak;
+    if (n.contributions) a.contributions = Math.max(a.contributions, n.contributions);
   }
 } catch (err) {
   console.warn("Could not fetch LWN commit activity:", err.message);
+  if (n) {
+    if (n.streak) a.streak = n.streak;
+    if (n.contributions) a.contributions = Math.max(a.contributions, n.contributions);
+  }
 }let o=await K2(r.login),{days:i,...s}=a,c=new Date().toISOString().slice(0,10),h=e2(JSON.stringify({rest:s,day:c,avatar:o?e2(o):null,config:r}));if(process.env.GITHUB_EVENT_NAME==="schedule"&&n?.key===h){console.log("no changes");return}u0(e,JSON.stringify({key:h,...a},null,1));let u=Y0(r,a,t,o);c0("assets",{recursive:!0});for(let m of R2("assets"))m.endsWith(".svg")&&!u[`assets/${m}`]&&V2(`assets/${m}`);for(let[m,f]of Object.entries(u))c0(N2(m),{recursive:!0}),u0(m,f);u0("README.md",X0(r,a,u)),console.log("done")}j2().catch(r=>{console.error(r),process.exit(1)});

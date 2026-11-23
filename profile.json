@@ -92,8 +92,14 @@
     ]
   },
   "projects": {
-    "source": "pinned",
-    "repos": [],
+    "source": "manual",
+    "repos": [
+      "SleepTracker",
+      "Sernheise",
+      "LastTrack",
+      "Zurutial",
+      "LastWave"
+    ],
     "overrides": {},
     "empty": "No description yet.",
     "fork": "Fork"
@@ -135,19 +141,6 @@
     "card": true
   },
   "buttons": {
-    "items": [
-      {
-        "icon": "language",
-        "label": "My website",
-        "url": "https://example.com",
-        "style": "filled"
-      },
-      {
-        "icon": "book_2",
-        "label": "All repositories",
-        "url": "",
-        "style": "tonal"
-      }
-    ]
+    "items": []
   }
 }

@@ -8,9 +8,11 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img src="assets/stack-light.svg" width="100%" alt="Tech stack"></picture>
 
-<a href="https://github.com/duxtami/SleepTracker"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sleeptracker-dark.svg"><img src="assets/project-sleeptracker-light.svg" width="49%" alt="SleepTracker"></picture></a>&nbsp;<a href="https://github.com/duxtami/Sernheise"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sernheise-dark.svg"><img src="assets/project-sernheise-light.svg" width="49%" alt="Sernheise"></picture></a>
+<a href="https://github.com/Clash-Projects/LastWave-Native"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-lastwave-native-dark.svg"><img src="assets/project-lastwave-native-light.svg" width="49%" alt="LastWave-Native"></picture></a>&nbsp;<a href="https://github.com/duxtami/SleepTracker"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sleeptracker-dark.svg"><img src="assets/project-sleeptracker-light.svg" width="49%" alt="SleepTracker"></picture></a>
 
-<a href="https://github.com/duxtami/LastTrack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-lasttrack-dark.svg"><img src="assets/project-lasttrack-light.svg" width="49%" alt="LastTrack"></picture></a>&nbsp;<a href="https://github.com/duxtami/Zurutial"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-zurutial-dark.svg"><img src="assets/project-zurutial-light.svg" width="49%" alt="Zurutial"></picture></a>
+<a href="https://github.com/duxtami/Sernheise"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-sernheise-dark.svg"><img src="assets/project-sernheise-light.svg" width="49%" alt="Sernheise"></picture></a>&nbsp;<a href="https://github.com/duxtami/Gramly"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-gramly-dark.svg"><img src="assets/project-gramly-light.svg" width="49%" alt="Gramly"></picture></a>
+
+<a href="https://github.com/AmanRajAryan/LastWave"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-lastwave-dark.svg"><img src="assets/project-lastwave-light.svg" width="49%" alt="LastWave"></picture></a>&nbsp;<a href="https://github.com/duxtami/LastTrack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-lasttrack-dark.svg"><img src="assets/project-lasttrack-light.svg" width="49%" alt="LastTrack"></picture></a>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" width="100%" alt="GitHub activity"></picture>
 

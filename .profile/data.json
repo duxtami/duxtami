@@ -1,0 +1,267 @@
+{
+ "key": "75b6ccb5",
+ "stars": 33,
+ "contributions": 334,
+ "repos": 8,
+ "followers": 41,
+ "languages": [
+  [
+   "Kotlin",
+   1331539
+  ],
+  [
+   "TypeScript",
+   351095
+  ],
+  [
+   "Python",
+   7125
+  ],
+  [
+   "CSS",
+   946
+  ],
+  [
+   "JavaScript",
+   358
+  ]
+ ],
+ "days": [
+  [
+   {
+    "c": 0,
+    "day": 8,
+    "today": false
+   },
+   {
+    "c": 4,
+    "day": 9,
+    "today": false
+   },
+   {
+    "c": 0,
+    "day": 10,
+    "today": false
+   },
+   {
+    "c": 0,
+    "day": 11,
+    "today": false
+   },
+   {
+    "c": 0,
+    "day": 12,
+    "today": false
+   },
+   {
+    "c": 0,
+    "day": 13,
+    "today": false
+   },
+   {
+    "c": 4,
+    "day": 14,
+    "today": false
+   }
+  ],
+  [
+   {
+    "c": 1,
+    "day": 15,
+    "today": false
+   },
+   {
+    "c": 8,
+    "day": 16,
+    "today": false
+   },
+   {
+    "c": 10,
+    "day": 17,
+    "today": false
+   },
+   {
+    "c": 2,
+    "day": 18,
+    "today": false
+   },
+   {
+    "c": 8,
+    "day": 19,
+    "today": false
+   },
+   {
+    "c": 6,
+    "day": 20,
+    "today": false
+   },
+   {
+    "c": 0,
+    "day": 21,
+    "today": false
+   }
+  ],
+  [
+   {
+    "c": 5,
+    "day": 22,
+    "today": false
+   },
+   {
+    "c": 3,
+    "day": 23,
+    "today": true
+   },
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ ],
+ "streak": {
+  "current": 2,
+  "longest": 8
+ },
+ "pins": [
+  {
+   "name": "LastWave-Native",
+   "url": "https://github.com/Clash-Projects/LastWave-Native",
+   "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
+   "fork": false,
+   "stars": 3217,
+   "language": "Kotlin",
+   "topics": [
+    "foss",
+    "kotlin",
+    "lastfm",
+    "lyrics",
+    "material3",
+    "ytmusic",
+    "innertube",
+    "scrobbler",
+    "autoeq",
+    "bit-perfect"
+   ]
+  },
+  {
+   "name": "SleepTracker",
+   "url": "https://github.com/duxtami/SleepTracker",
+   "text": "A beautiful, private and modern sleep tracker application build with material 3 expressive design",
+   "fork": false,
+   "stars": 19,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "Sernheise",
+   "url": "https://github.com/duxtami/Sernheise",
+   "text": "A  powerful app for editing photos and videos.",
+   "fork": false,
+   "stars": 8,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "Gramly",
+   "url": "https://github.com/duxtami/Gramly",
+   "text": "",
+   "fork": false,
+   "stars": 1,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "LastWave",
+   "url": "https://github.com/AmanRajAryan/LastWave",
+   "text": "A last.fm playlist generator",
+   "fork": false,
+   "stars": 26,
+   "language": "JavaScript",
+   "topics": []
+  },
+  {
+   "name": "LastTrack",
+   "url": "https://github.com/duxtami/LastTrack",
+   "text": "",
+   "fork": false,
+   "stars": 3,
+   "language": "Kotlin",
+   "topics": []
+  }
+ ],
+ "all": [
+  {
+   "name": "SleepTracker",
+   "url": "https://github.com/duxtami/SleepTracker",
+   "text": "A beautiful, private and modern sleep tracker application build with material 3 expressive design",
+   "fork": false,
+   "stars": 19,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "Sernheise",
+   "url": "https://github.com/duxtami/Sernheise",
+   "text": "A  powerful app for editing photos and videos.",
+   "fork": false,
+   "stars": 8,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "LastTrack",
+   "url": "https://github.com/duxtami/LastTrack",
+   "text": "",
+   "fork": false,
+   "stars": 3,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "Zurutial",
+   "url": "https://github.com/duxtami/Zurutial",
+   "text": "",
+   "fork": false,
+   "stars": 2,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "LastWave",
+   "url": "https://github.com/duxtami/LastWave",
+   "text": "A last.fm playlist generator",
+   "fork": true,
+   "stars": 2,
+   "language": "JavaScript",
+   "topics": []
+  },
+  {
+   "name": "Gramly",
+   "url": "https://github.com/duxtami/Gramly",
+   "text": "",
+   "fork": false,
+   "stars": 1,
+   "language": "Kotlin",
+   "topics": []
+  },
+  {
+   "name": "duxtami",
+   "url": "https://github.com/duxtami/duxtami",
+   "text": "My GitHub profile",
+   "fork": false,
+   "stars": 0,
+   "language": null,
+   "topics": []
+  },
+  {
+   "name": "Chakbishu-development-trust",
+   "url": "https://github.com/duxtami/Chakbishu-development-trust",
+   "text": "Chakbishu Development Trust - Complete Group, Customer, Savings, Loan, Collection & KYC Management System",
+   "fork": false,
+   "stars": 0,
+   "language": "TypeScript",
+   "topics": []
+  }
+ ]
+}

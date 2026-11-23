@@ -19,7 +19,7 @@
   ],
   "hidden": [],
   "hero": {
-    "greeting": "Hi, I'm",
+    "greeting": "Hi, I'm the maker of LastWave ",
     "name": "",
     "subtitle": "I love Material You ",
     "typing": true,
@@ -121,13 +121,8 @@
     "days": "days"
   },
   "socials": {
-    "items": [
-      {
-        "icon": "brand:telegram",
-        "url": "https://t.me/duxtami"
-      }
-    ],
-    "variant": "chip",
+    "items": [],
+    "variant": "icon",
     "fill": "tonal",
     "card": true
   },

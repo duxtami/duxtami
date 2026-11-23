@@ -29,4 +29,55 @@ import{existsSync as W0,mkdirSync as c0,readdirSync as R2,readFileSync as l0,unl
       followers{totalCount}
       repositories(ownerAffiliations:OWNER,privacy:PUBLIC,first:100,orderBy:{field:STARGAZERS,direction:DESC}){totalCount nodes{${$0} ${t}}}
       pinnedItems(first:6,types:REPOSITORY){nodes{... on Repository{${$0}}}}
-      contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{contributionCount date weekday}}}}}}`,{login:r}),n=e.repositories.nodes,a=t2(n);try{let{viewer:c}=await J0(`{viewer{login repositories(ownerAffiliations:OWNER,first:100){nodes{isFork ${t}}}}}`);c.login.toLowerCase()===r.toLowerCase()&&(a=t2(c.repositories.nodes))}catch{}let o=new Date().toISOString().slice(0,10),i=[];for(let c of e.contributionsCollection.contributionCalendar.weeks.slice(-3)){let h=Array(7).fill(null);for(let u of c.contributionDays)h[u.weekday]={c:u.contributionCount,day:+u.date.slice(8),today:u.date===o};i.push(h)}for(;i.length<3;)i.unshift(Array(7).fill(null));let s=e.contributionsCollection.contributionCalendar.weeks.flatMap(c=>c.contributionDays).filter(c=>c.date<=o).map(c=>c.contributionCount);return{stars:n.filter(c=>!c.isFork).reduce((c,h)=>c+h.stargazerCount,0),contributions:e.contributionsCollection.contributionCalendar.totalContributions,repos:e.repositories.totalCount,followers:e.followers.totalCount,languages:a,days:i,streak:j0(s),pins:e.pinnedItems.nodes.filter(Boolean).map(_0),all:n.map(_0)}}async function K2(r){try{let t=await fetch(`https://github.com/${r}.png?size=320`);return t.ok?`data:${t.headers.get("content-type")||"image/png"};base64,${Buffer.from(await t.arrayBuffer()).toString("base64")}`:null}catch{return null}}function e2(r){let t=0;for(let e=0;e<r.length;e++)t=t*31+r.charCodeAt(e)|0;return(t>>>0).toString(16)}async function j2(){let r=JSON.parse(l0("profile.json","utf8")),t=structuredClone(f0);if(W0(".profile/icons.json")){let m=JSON.parse(l0(".profile/icons.json","utf8"));Object.assign(t.symbol,m.symbol),Object.assign(t.brand,m.brand)}c0(".profile",{recursive:!0});let e=".profile/data.json",n=W0(e)?JSON.parse(l0(e,"utf8")):null,a=await U2(r.login);for(let p of a.pins){if(!a.all.some(x=>x.name.toLowerCase()===p.name.toLowerCase()||x.url===p.url))a.all.push(p);}for(let repoItem of(r.projects.repos||[])){let found=a.all.find(x=>x.name.toLowerCase()===repoItem.toLowerCase()||x.url.toLowerCase().endsWith("/"+repoItem.toLowerCase()));if(!found){try{let owner=repoItem.includes("/")?repoItem.split("/")[0]:"Clash-Projects";let name=repoItem.includes("/")?repoItem.split("/")[1]:repoItem;let q="query($owner:String!, $name:String!){repository(owner:$owner, name:$name){name url description isFork stargazerCount primaryLanguage{name} repositoryTopics(first:10){nodes{topic{name}}}}}";let data=await J0(q,{owner,name});if(data?.repository)a.all.push(_0(data.repository));}catch(err){console.warn("Could not fetch repo:",repoItem,err.message);}}}let o=await K2(r.login),{days:i,...s}=a,c=new Date().toISOString().slice(0,10),h=e2(JSON.stringify({rest:s,day:c,avatar:o?e2(o):null,config:r}));if(process.env.GITHUB_EVENT_NAME==="schedule"&&n?.key===h){console.log("no changes");return}u0(e,JSON.stringify({key:h,...a},null,1));let u=Y0(r,a,t,o);c0("assets",{recursive:!0});for(let m of R2("assets"))m.endsWith(".svg")&&!u[`assets/${m}`]&&V2(`assets/${m}`);for(let[m,f]of Object.entries(u))c0(N2(m),{recursive:!0}),u0(m,f);u0("README.md",X0(r,a,u)),console.log("done")}j2().catch(r=>{console.error(r),process.exit(1)});
+      contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{contributionCount date weekday}}}}}}`,{login:r}),n=e.repositories.nodes,a=t2(n);try{let{viewer:c}=await J0(`{viewer{login repositories(ownerAffiliations:OWNER,first:100){nodes{isFork ${t}}}}}`);c.login.toLowerCase()===r.toLowerCase()&&(a=t2(c.repositories.nodes))}catch{}let o=new Date().toISOString().slice(0,10),i=[];for(let c of e.contributionsCollection.contributionCalendar.weeks.slice(-3)){let h=Array(7).fill(null);for(let u of c.contributionDays)h[u.weekday]={c:u.contributionCount,day:+u.date.slice(8),today:u.date===o,date:u.date};i.push(h)}for(;i.length<3;)i.unshift(Array(7).fill(null));let rawDays=e.contributionsCollection.contributionCalendar.weeks.flatMap(c=>c.contributionDays).filter(c=>c.date<=o).map(c=>({date:c.date,c:c.contributionCount})),s=rawDays.map(c=>c.c);return{stars:n.filter(c=>!c.isFork).reduce((c,h)=>c+h.stargazerCount,0),contributions:e.contributionsCollection.contributionCalendar.totalContributions,repos:e.repositories.totalCount,followers:e.followers.totalCount,languages:a,days:i,streak:j0(s),pins:e.pinnedItems.nodes.filter(Boolean).map(_0),all:n.map(_0),rawDays}}async function K2(r){try{let t=await fetch(`https://github.com/${r}.png?size=320`);return t.ok?`data:${t.headers.get("content-type")||"image/png"};base64,${Buffer.from(await t.arrayBuffer()).toString("base64")}`:null}catch{return null}}function e2(r){let t=0;for(let e=0;e<r.length;e++)t=t*31+r.charCodeAt(e)|0;return(t>>>0).toString(16)}async function j2(){let r=JSON.parse(l0("profile.json","utf8")),t=structuredClone(f0);if(W0(".profile/icons.json")){let m=JSON.parse(l0(".profile/icons.json","utf8"));Object.assign(t.symbol,m.symbol),Object.assign(t.brand,m.brand)}c0(".profile",{recursive:!0});let e=".profile/data.json",n=W0(e)?JSON.parse(l0(e,"utf8")):null,a=await U2(r.login);for(let p of a.pins){if(!a.all.some(x=>x.name.toLowerCase()===p.name.toLowerCase()||x.url===p.url))a.all.push(p);}for(let repoItem of(r.projects.repos||[])){let found=a.all.find(x=>x.name.toLowerCase()===repoItem.toLowerCase()||x.url.toLowerCase().endsWith("/"+repoItem.toLowerCase()));if(!found){try{let owner=repoItem.includes("/")?repoItem.split("/")[0]:"Clash-Projects";let name=repoItem.includes("/")?repoItem.split("/")[1]:repoItem;let q="query($owner:String!, $name:String!){repository(owner:$owner, name:$name){name url description isFork stargazerCount primaryLanguage{name} repositoryTopics(first:10){nodes{topic{name}}}}}";let data=await J0(q,{owner,name});if(data?.repository)a.all.push(_0(data.repository));}catch(err){console.warn("Could not fetch repo:",repoItem,err.message);}}}let lwnRepo = a.all.find(x => x.name.toLowerCase() === "lastwave-native");
+if (lwnRepo) {
+  a.stars += lwnRepo.stars;
+  a.repos += 1;
+}
+try {
+  let lq = "query { repository(owner: \"Clash-Projects\", name: \"LastWave-Native\") { languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name } } } } }";
+  let ldata = await J0(lq);
+  let lmap = {};
+  for (let [l, sz] of a.languages) lmap[l] = sz;
+  for (let edge of ldata?.repository?.languages?.edges || []) {
+    if (!E2.has(edge.node.name)) {
+      lmap[edge.node.name] = (lmap[edge.node.name] || 0) + edge.size;
+    }
+  }
+  a.languages = Object.entries(lmap).sort((x, y) => y[1] - x[1]).slice(0, 7);
+} catch (err) {
+  console.warn("Could not fetch LWN languages:", err.message);
+}
+try {
+  let actRes = await (await fetch("https://api.github.com/repos/Clash-Projects/LastWave-Native/stats/commit_activity", {
+    headers: { Authorization: "bearer " + O2, "User-Agent": "expressive-profile" }
+  })).json();
+  if (Array.isArray(actRes)) {
+    let lwnDays = {};
+    for (let week of actRes) {
+      for (let d = 0; d < 7; d++) {
+        let dateStr = new Date((week.week + d * 86400) * 1000).toISOString().slice(0, 10);
+        lwnDays[dateStr] = (lwnDays[dateStr] || 0) + (week.days[d] || 0);
+      }
+    }
+    for (let week of a.days) {
+      for (let day of week) {
+        if (day && day.date && lwnDays[day.date]) {
+          day.c += lwnDays[day.date];
+        }
+      }
+    }
+    if (a.rawDays) {
+      for (let day of a.rawDays) {
+        if (lwnDays[day.date]) {
+          day.c += lwnDays[day.date];
+        }
+      }
+      a.streak = j0(a.rawDays.map(d => d.c));
+    }
+    let lwnTotal = Object.values(lwnDays).reduce((x, y) => x + y, 0);
+    a.contributions += lwnTotal;
+  }
+} catch (err) {
+  console.warn("Could not fetch LWN commit activity:", err.message);
+}let o=await K2(r.login),{days:i,...s}=a,c=new Date().toISOString().slice(0,10),h=e2(JSON.stringify({rest:s,day:c,avatar:o?e2(o):null,config:r}));if(process.env.GITHUB_EVENT_NAME==="schedule"&&n?.key===h){console.log("no changes");return}u0(e,JSON.stringify({key:h,...a},null,1));let u=Y0(r,a,t,o);c0("assets",{recursive:!0});for(let m of R2("assets"))m.endsWith(".svg")&&!u[`assets/${m}`]&&V2(`assets/${m}`);for(let[m,f]of Object.entries(u))c0(N2(m),{recursive:!0}),u0(m,f);u0("README.md",X0(r,a,u)),console.log("done")}j2().catch(r=>{console.error(r),process.exit(1)});

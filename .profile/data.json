@@ -1,13 +1,13 @@
 {
- "key": "535e1581",
- "stars": 3354,
- "contributions": 1851,
+ "key": "5e3602db",
+ "stars": 3377,
+ "contributions": 1865,
  "repos": 9,
- "followers": 42,
+ "followers": 41,
  "languages": [
   [
    "Kotlin",
-   11936762
+   11946031
   ],
   [
    "TypeScript",
@@ -143,7 +143,7 @@
     "date": "2026-11-24"
    },
    {
-    "c": 10,
+    "c": 24,
     "day": 25,
     "today": true,
     "date": "2026-11-25"
@@ -163,7 +163,7 @@
    "url": "https://github.com/Clash-Projects/LastWave-Native",
    "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
    "fork": false,
-   "stars": 3318,
+   "stars": 3344,
    "language": "Kotlin",
    "topics": [
     "foss",
@@ -183,7 +183,7 @@
    "url": "https://github.com/duxtami/SleepTracker",
    "text": "A beautiful, private and modern sleep tracker application build with material 3 expressive design",
    "fork": false,
-   "stars": 20,
+   "stars": 19,
    "language": "Kotlin",
    "topics": []
   },
@@ -230,7 +230,7 @@
    "url": "https://github.com/duxtami/SleepTracker",
    "text": "A beautiful, private and modern sleep tracker application build with material 3 expressive design",
    "fork": false,
-   "stars": 20,
+   "stars": 19,
    "language": "Kotlin",
    "topics": []
   },
@@ -271,24 +271,6 @@
    "topics": []
   },
   {
-   "name": "duxtami",
-   "url": "https://github.com/duxtami/duxtami",
-   "text": "My GitHub profile",
-   "fork": false,
-   "stars": 1,
-   "language": null,
-   "topics": []
-  },
-  {
-   "name": "Chakbishu-development-trust",
-   "url": "https://github.com/duxtami/Chakbishu-development-trust",
-   "text": "Chakbishu Development Trust - Complete Group, Customer, Savings, Loan, Collection & KYC Management System",
-   "fork": false,
-   "stars": 1,
-   "language": "TypeScript",
-   "topics": []
-  },
-  {
    "name": "Gramly",
    "url": "https://github.com/duxtami/Gramly",
    "text": "",
@@ -298,11 +280,29 @@
    "topics": []
   },
   {
+   "name": "duxtami",
+   "url": "https://github.com/duxtami/duxtami",
+   "text": "My GitHub profile",
+   "fork": false,
+   "stars": 0,
+   "language": null,
+   "topics": []
+  },
+  {
+   "name": "Chakbishu-development-trust",
+   "url": "https://github.com/duxtami/Chakbishu-development-trust",
+   "text": "Chakbishu Development Trust - Complete Group, Customer, Savings, Loan, Collection & KYC Management System",
+   "fork": false,
+   "stars": 0,
+   "language": "TypeScript",
+   "topics": []
+  },
+  {
    "name": "LastWave-Native",
    "url": "https://github.com/Clash-Projects/LastWave-Native",
    "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
    "fork": false,
-   "stars": 3318,
+   "stars": 3344,
    "language": "Kotlin",
    "topics": [
     "foss",
@@ -1789,7 +1789,7 @@
   },
   {
    "date": "2026-11-25",
-   "c": 10
+   "c": 24
   }
  ]
 }

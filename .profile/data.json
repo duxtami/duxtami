@@ -1,13 +1,13 @@
 {
- "key": "e13715df",
- "stars": 3403,
- "contributions": 1873,
+ "key": "8cc15bd",
+ "stars": 3419,
+ "contributions": 1876,
  "repos": 9,
  "followers": 41,
  "languages": [
   [
    "Kotlin",
-   11994246
+   12006596
   ],
   [
    "TypeScript",
@@ -149,7 +149,7 @@
     "date": "2026-11-25"
    },
    {
-    "c": 5,
+    "c": 8,
     "day": 26,
     "today": true,
     "date": "2026-11-26"
@@ -168,7 +168,7 @@
    "url": "https://github.com/Clash-Projects/LastWave-Native",
    "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
    "fork": false,
-   "stars": 3370,
+   "stars": 3386,
    "language": "Kotlin",
    "topics": [
     "foss",
@@ -307,7 +307,7 @@
    "url": "https://github.com/Clash-Projects/LastWave-Native",
    "text": "Simple Android YouTube Music client with Material UI, Liquid Glass, Bit-Perfect playback, Automix, Lossless addons & advanced audiophile features.",
    "fork": false,
-   "stars": 3370,
+   "stars": 3386,
    "language": "Kotlin",
    "topics": [
     "foss",
@@ -1798,7 +1798,7 @@
   },
   {
    "date": "2026-11-26",
-   "c": 5
+   "c": 8
   }
  ]
 }
